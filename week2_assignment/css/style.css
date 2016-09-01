@@ -1,0 +1,90 @@
+/*****************
+* Shaohong Li
+* 9/1/2016
+******************/
+
+* {
+    box-sizing: border-box; 
+}    
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: #024059;
+    color: #d9b282;
+}
+
+*:visited, *:link {
+    color: #d9b282;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    position: relative;
+    border: 1px solid black;
+    height: 400px;
+    background-color: #423e32;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.25em;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+
+#section1 h2 {
+    background-color: #ded96d;
+}
+
+#section2 h2 {
+    background-color: #83b0ab;
+}
+
+#section3 h2 {
+    background-color: #d2ccb6;
+}
+
+article {
+    margin-top: 50px;
+    padding: 15px;
+    height: 350px;
+    overflow: auto;
+}
+
+
+.col-lg-4, .col-md-6, .col-md-12 {
+    position: relative;
+    padding: 15px;
+    float: left;
+    margin: auto;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+	width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+	width: 50%;
+    }
+    .col-md-12 {
+	width: 100%;
+    }
+}

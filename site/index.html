@@ -2,36 +2,45 @@
 <html>
   <head>
     <meta charset='utf-8'> <!-- meta tag is stand-alone -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Coursera test</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/style.css'>
   </head>
 
   <body>
     <h1>Heading1</h1>
 
-    <div class='leftcol box'>
-      <div id='top'> Div 1: generic block element </div>
+    <div class='container'>
+      <div class='leftcol col-lg-6'>
+	<div id='top'> Div 1: generic block element </div>
 
-      <p>This is body. <span> **Span 1: generic inline element** </span>
-	&quot;This is a quote.&quot;
-      </p>
+	<p>This is body. <span> **Span 1: generic inline element** </span>
+	  &quot;This is a quote.&quot;
+	</p>
 
-      <div>
-	This is an unordered list: 
-	<ul>
-	  <li> item1 </li>
-	  <li> item2
-	    <ul>
-	      <li>subitem1</li>
-	    </ul>
-	  </li>
-	  <li> item3 </li>
-	</ul>
+	<div>
+	  This is an unordered list: 
+	  <ul>
+	    <li> item1 </li>
+	    <li> item2
+	      <ul>
+		<li>subitem1</li>
+	      </ul>
+	    </li>
+	    <li> item3 </li>
+	  </ul>
+	</div>
       </div>
-    </div>
 
-    <p class='style rightcol box'> This is a paragraph to which styles are applied to. The girl beside the window looked up. She had straggly, waist‐length, dirty blonde hair, very pale eyebrows and protuberant eyes that gave her a permanently surprised look. Harry knew at once why Neville had chosen to pass this compartment by. The girl gave off an aura of distinct dottiness. Perhaps it was the fact that she had stuck her wand behind her left ear for safekeeping, or that she had chosen to wear a necklace of Butterbeer corks, or that she was reading a magazine upside‐down. Her eyes ranged over Neville and came to rest on Harry. She nodded. </p>
-    
+      <div class='style rightcol box col-lg-6'>
+	<p>This is a paragraph to which styles are applied to. </p>
+	<p>There are seven main playable characters in Final Fantasy X, starting with Tidus, a cheerful young teenager and a star blitzball player from Zanarkand, who seeks a way home after an encounter with Sin transported him to Spira.[7] To do so, he joins Yuna, a summoner on a journey to obtain the Final Aeon and defeat the enormous whale-like "Sin".[11] Journeying with them are: Kimahri Ronso, a young warrior of the Ronso tribe who watched over Yuna during her childhood;[12] Wakka, a blitzball player whose younger brother was killed by Sin;[13][14] and Lulu, a stoic black mage close to Yuna and Wakka.[11] During the journey, they are joined by Auron, a former warrior monk, who worked with both Tidus' and Yuna's fathers to defeat Sin 10 years prior;[15] and Rikku, Yuna's cousin, a perky Al Bhed girl and the first friendly person Tidus meets upon arriving in Spira.[7]</p>
+	<p>The girl beside the window looked up. She had straggly, waist‐length, dirty blonde hair, very pale eyebrows and protuberant eyes that gave her a permanently surprised look. Harry knew at once why Neville had chosen to pass this compartment by. The girl gave off an aura of distinct dottiness. Perhaps it was the fact that she had stuck her wand behind her left ear for safekeeping, or that she had chosen to wear a necklace of Butterbeer corks, or that she was reading a magazine upside‐down. Her eyes ranged over Neville and came to rest on Harry. She nodded. </p>
+	<p>"It wouldnʹt be the first time, either,ʹ said a Ministry insider. ʹCornelius ʺGoblin‐Crusherʺ Fudge, thatʹs what his friends call him. If you could hear him when he thinks no oneʹs listening, oh, heʹs always talking about the goblins heʹs had done in; heʹs had them drowned, heʹs had them dropped off buildings, heʹs had them poisoned, heʹs had them cooked in pies…ʺ</p>
+      </div>
+    </div>    
 
     <div>
       A picture goes here<br>
@@ -40,5 +49,8 @@
       <a href='https://www.google.com' title='google' target='_blank'> Google </a><br>
       <a href='#top'> Back to top </a>
     </div>
+
+    <script src='js/jquery-3.1.0.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
   </body>
 </html>

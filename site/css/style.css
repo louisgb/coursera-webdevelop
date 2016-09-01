@@ -1,0 +1,59 @@
+/* star selector applies to everything */
+/* * { */
+/*     box-sizing: border-box; /\* box-sizing is not inherited *\/ */
+/*     clear: both */
+/* }     */
+
+/* body { */
+/*     font-family: Arial, Helvetica, sans-serif; */
+/*     font-size: 24px; */
+/*     background-color: black; */
+/*     color: white; */
+/* } */
+
+.box {
+    /* padding: 8px 8px 8px 8px; */
+    border: 3px solid white;
+    /* margin: 10px; */
+    /* width: 600px; */
+    height: 300px;
+    overflow: auto;
+}
+
+.leftcol {
+    /* width: 45%; */
+    /* float: left; */
+    /* clear: left; */
+}
+
+.rightcol {
+    /* width: 45%; */
+    /* float: right; */
+    /* clear: right; */
+}
+    
+
+.style {
+    background-color: gray;
+    background-image: url('http://wallpapercave.com/wp/GJhRn9q.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em; /*equivalent to 130%;*/
+    /* text-transform: uppercase; */
+    text-align: center;
+
+}
+
+/* @media (max-width: 1199px) { */
+/*     .leftcol, .rightcol { */
+/* 	float: none; */
+/* 	width: 90%; */
+/* 	margin: 10px auto; */
+/*     } */
+
+}    
