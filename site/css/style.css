@@ -4,13 +4,211 @@
 /*     clear: both */
 /* }     */
 
-/* body { */
-/*     font-family: Arial, Helvetica, sans-serif; */
-/*     font-size: 24px; */
-/*     background-color: black; */
-/*     color: white; */
-/* } */
+body {
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: #7a0019; /* UMN Maroon: #7a0019; UMN Gold: #ffcc33 */
+    color: white;
+}
 
+/*** HEADER ***/
+
+/* navbar region */
+#header-nav {
+    background-color: #ffcc33;
+    border-radius: 0;
+    border: 0;
+}
+
+/* navbar log image */
+#logo-img {
+    background: url('../images/GBHead.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+/* navbar-brand region */
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: #7a0019;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover,
+.navbar-brand a:focus {    
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    color: #000;
+    /* font-size: .7em; */
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+/* navbar list and button region */
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color: #7a0019;
+    text-align: center;
+}
+#nav-list a:hover {
+    background-color: #e7e7e7;
+    text-align: center;
+}
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+.navbar-header {
+    align: middle;
+}
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #7a0019;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -50px;
+    vertical-align: middle;
+}
+
+/*** HOME PAGE ***/
+
+.container .jumbotron {
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+
+#education-tile, #awards-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+#education-tile:hover, #awards-tile:hover,
+#map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#education-tile, #awards-tile {
+    background: url('http://placehold.it/350x250') no-repeat;
+    Background-position: center;
+}
+
+#education-tile span, #awards-tile span, #map-tile span {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+
+/*** FOOTER ***/
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer .row {
+    margin-bottom: 35px;
+}
+
+
+/* media queries */
+/** large screen **/
+@media (min-width: 1200px) {
+    .container .jumbotron {
+	/* width of background image should match the lower bound of screen size */
+	background: url('https://ladygeekgirl.files.wordpress.com/2012/12/yuna_ffx_07.jpg') no-repeat;
+	height: 1143px;
+    }
+}
+
+/** medium screen **/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container .jumbotron {
+	background: url('http://img05.deviantart.net/aa1f/i/2010/108/c/b/final_fantasy_x_edited_by_kaztelli.jpg') no-repeat;
+	height: 675px;
+    }
+}
+
+/** small screen **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron {
+	background: url('http://cdn3-www.playstationlifestyle.net/assets/uploads/2012/02/final-fantasy-x-logo-feature.jpg') no-repeat;
+	height: 300px;
+    }
+}
+
+/** extra small screen **/
+@media (max-width: 767px) {
+    .navbar-brand {
+	padding-top: 10px;
+	height: 80px;
+    }
+    .navbar-brand h1 {
+	padding-top: 10px;
+	font-size: 4vw; /* 1vw = 1% of viewport width */
+    }
+    .navbar-brand p {
+	font-size: 2.5vw; 
+	margin-top: 8px;
+    }
+    #collapsable-nav a {
+	font-size: 1.2em;
+    }
+    #collapsable-nav a span {
+	font-size: 1em;
+	margin-right: 5px;
+    }
+    .container .jumbotron {
+	margin-top: 30px;
+	padding: 0;
+    }
+
+    #education-tile, #awards-tile, #map-tile {
+	width: 350px;
+	margin: 0 auto 15px;
+    }
+    
+    .panel-footer section {
+	text-align: center;
+    }
+
+}
+
+
+
+/******************************************************************/
 .box {
     /* padding: 8px 8px 8px 8px; */
     border: 3px solid white;
@@ -49,11 +247,5 @@
 
 }
 
-/* @media (max-width: 1199px) { */
-/*     .leftcol, .rightcol { */
-/* 	float: none; */
-/* 	width: 90%; */
-/* 	margin: 10px auto; */
-/*     } */
 
-}    
+    

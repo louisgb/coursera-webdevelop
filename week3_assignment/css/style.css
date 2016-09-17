@@ -1,0 +1,91 @@
+/* star selector applies to everything */
+/* * { */
+/*     box-sizing: border-box; /\* box-sizing is not inherited *\/ */
+/*     clear: both */
+/* }     */
+
+body {
+    font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: #7a0019; /* UMN Maroon: #7a0019; UMN Gold: #ffcc33 */
+    color: white;
+}
+
+/*** HEADER ***/
+
+/* navbar region */
+#header-nav {
+    background-color: #ffcc33;
+    border-radius: 0;
+    border: 0;
+}
+
+
+/* navbar-brand region */
+.navbar-brand {
+    padding-top: 20px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: #7a0019;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+#nav-list hr {
+    margin: 5px 0;
+}
+#nav-list li {
+    text-align: center;
+}
+
+
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #7a0019;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -40px;
+    /* vertical-align: middle; */
+}
+
+.gb-box {
+    padding: 15px;
+    background-color: #000;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+#main-content section {
+    margin-bottom: 25px;
+}
+
+/* media queries */
+/** large screen **/
+@media (min-width: 1200px) {
+}
+
+/** medium screen **/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/** small screen **/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/** extra small screen **/
+@media (max-width: 767px) {
+}
+
+
+

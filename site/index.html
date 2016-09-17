@@ -1,15 +1,93 @@
 <!doctype html>
-<html>
+<html lang='en'>
   <head>
     <meta charset='utf-8'> <!-- meta tag is stand-alone -->
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Coursera test</title>
+
+    <!-- Import fonts from Google -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    
     <link rel='stylesheet' href='css/bootstrap.min.css'>
     <link rel='stylesheet' href='css/style.css'>
   </head>
 
   <body>
+    <!-- navbar region -->
+    <header>
+      <nav id='header-nav' class='navbar navbar-default'>
+	<div class='container'>
+	  
+	  <!-- navbar header image -->
+	  <div class='navbar-header'>
+	    <a href='index.html' class='pull-left visible-md visible-lg'>
+	      <div id='logo-img' alt='logo image'></div>
+	    </a>
+
+	    <div class='navbar-brand'>
+	      <a href='index.html'><h1>Shaohong Louis Li</h1></a>
+	      <p>
+		<span>Physics and Chemistry Modeler; Tech Lover</span>
+	      </p>
+	    </div>
+
+	    <!-- button to toggle collapsable menu -->
+	    <button type='button' class='navbar-toggle collapsed'
+		    data-toggle='collapse' data-target='#collapsable-nav'
+		    aria-expanded='false'>
+	      <span class='sr-only'>Toggle navigation</span>
+	      <span class='icon-bar'></span>
+	      <span class='icon-bar'></span>
+	      <span class='icon-bar'></span>
+	    </button>
+	    
+	  </div>
+
+	  <!-- collapsable menu for small screen -->
+	  <div id='collapsable-nav' class='collapse navbar-collapse'>
+	    <ul id='nav-list' class='nav navbar-nav navbar-right'>
+	      <li>
+		<a href='#'><span class='glyphicon glyphicon-book'></span>
+		  <br class='hidden-xs'> Education</a>
+	      </li>
+	      <li>
+		<a href='#'><span class='glyphicon glyphicon-certificate'></span>
+		  <br class='hidden-xs'> Rewards</a>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+      </nav>
+    </header>
+
+    <div id='main-content' class='container'>
+      
+      <!-- "Jumbotron" -->
+      <div class='jumbotron'>
+	<img src='http://vignette1.wikia.nocookie.net/finalfantasy/images/e/ee/Ffx_intro.jpg/revision/latest/scale-to-width-down/800?cb=20101122012159' alt='pic' class='img-responsive visible-xs'>
+      </div>
+
+      <div id='home-tiles' class='row'>
+	<div class='col-md-4 col-sm-6 col-xs-12'>
+	  <div id='education-tile'><span>Education</span></div>
+	</div>
+	<div class='col-md-4 col-sm-6 col-xs-12'>
+	  <div id='awards-tile'><span>Awards</span></div>
+	</div>
+	<div class='col-md-4 col-sm-12 col-xs-12'>
+	  <a href='https://goo.gl/maps/UDkPkiTUHM42' target='_blank'>
+	    <div id='map-tile'>
+	      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1306.6341124315616!2d-93.23646949956549!3d44.97444425073434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5b71bdd5449b1a33!2sSmith+Hall!5e0!3m2!1sen!2sus!4v1473995950333" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+	      <span>Map</span>
+	    </div>
+	  </a>
+	</div>
+      </div>
+    </div>
+
+<!-- ------------------------- -->    
     <h1>Heading1</h1>
 
     <div class='container'>
@@ -50,7 +128,30 @@
       <a href='#top'> Back to top </a>
     </div>
 
+
+    <footer class='panel-footer'>
+      <div class='container'>
+	<div class='row'>
+	  <section id='publications' class='col-sm-4'>
+	    Publications
+	    <hr class='visible-xs'>
+	  </section>
+	  <section id='experience' class='col-sm-4'>
+	    Experience
+	    <hr class='visible-xs'>
+	  </section>
+	  <section id='skills' class='col-sm-4'>
+	    Skills
+	    <hr class='visible-xs'>
+	  </section>
+	</div>
+	<div class='text-center'>&copy; Copyright Shaohong Li 2016</div>
+      </div>
+    </footer>
+
+    
     <script src='js/jquery-3.1.0.min.js'></script>
     <script src='js/bootstrap.min.js'></script>
+    <script src='js/script.js'></script>
   </body>
 </html>
